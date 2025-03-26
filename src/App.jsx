@@ -21,7 +21,7 @@ const App = () => {
       // do nothing
     }
     else if(label === '=') {
-      newValue = eval(value);
+      newValue = eval(value).toString();
     }
     else {
       newValue = value === '0' ? label : value + label;
